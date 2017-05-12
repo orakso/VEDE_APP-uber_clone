@@ -1,0 +1,45 @@
+<!--
+  Generated template for the LogIn page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+ 
+    <ion-row class="login-form">
+        <ion-col>
+            <ion-list inset>
+ 
+              <ion-item>
+                <ion-label><ion-icon name="person"></ion-icon></ion-label>
+                <ion-input [(ngModel)]="email" placeholder="email" type="text"></ion-input>
+              </ion-item>
+ 
+              <ion-item>
+                <ion-label><ion-icon name="lock"></ion-icon></ion-label>
+                <ion-input [(ngModel)]="password" placeholder="password" type="password"></ion-input>
+              </ion-item>
+ 
+            </ion-list>
+ 
+            <button ion-button full (click)="login()" color="primary" class="login-button">Login</button>
+ 
+        </ion-col>
+    </ion-row>
+ 
+    <ion-row>
+        <ion-col>
+            <button ion-button (click)="launchSignup()" class="create-account">Create an Account</button>
+        </ion-col>
+    </ion-row>
+ 
+</ion-content>

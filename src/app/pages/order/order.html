@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle> 
+		  <ion-icon name='menu'></ion-icon>
+  	</button>
+    <ion-title>Order Ride</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="map-wrapper">
+    <map #map [isPickupRequested]="isPickupRequested">
+      
+    </map>
+    
+  </div>
+
+  <div class="bottom request-controls">
+    <ion-row>
+      <ion-col>
+        <button ion-button [hidden]="isPickupRequested" block primary (click)="confirmPickup()">Request Pickup</button>
+        <button ion-button [hidden]="!isPickupRequested" block secondary (click)="cancelPickup()">Cancel Pickup</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        Arrival time: {{timeTillArrival}} min.
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>
+

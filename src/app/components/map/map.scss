@@ -1,0 +1,33 @@
+map {
+    
+     #map {
+        height: 70%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute!important;
+        overflow: hidden!important;
+
+    }
+    
+    // .hidemap {
+    //     visibility: hidden;
+    //     margin-top: -1000px;
+    // }
+    
+    .searchbar {
+        opacity: .7;
+        height: 44px;
+    }
+    .navigate{
+        opacity: .7;
+        height: 44px;
+    }
+    ion-row{
+        width: 100%;
+        //bottom: 50%;
+    }
+
+
+
+}

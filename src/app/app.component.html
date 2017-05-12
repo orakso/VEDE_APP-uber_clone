@@ -1,0 +1,19 @@
+<ion-menu type="overlay" [content]="content" >
+	<ion-header>
+		<ion-toolbar>
+			<ion-title>Menu</ion-title>
+		</ion-toolbar>
+	</ion-header>
+	
+	<ion-content>
+		<ion-list>
+			<button ion-item *ngFor="let component of components" (click)="openComponent(component)">
+				<div>
+					{{component.title}}
+				</div>
+			</button>
+		</ion-list>
+	</ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootComponent" #content swipeBackEnabled="false"></ion-nav>

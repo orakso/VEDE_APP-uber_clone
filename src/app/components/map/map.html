@@ -1,0 +1,34 @@
+<!--
+  Generated template for the Map component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+
+<div class="wrapper" [class.hidemap]="error">
+
+
+
+  
+  <div id="map" #map
+  
+  >
+
+    <!--{{text}}-->
+    
+  </div>
+
+  <ion-row> 
+	  <!--<div class="col col-50"><button class="button button-positive">button-positive</button></div>
+    <div class="col col-50"><button class="button button-positive">button-positive</button></div>   -->
+    <ion-col class="item" >
+        <ion-searchbar id="searchbar" #searchbar placeholder="Search pickup place" ></ion-searchbar>
+    </ion-col>
+    <button class="item" ion-button class="navigate" icon-only (click)='navigateToMyActualLocation()' color="light">
+      <ion-icon name="ios-locate-outline"></ion-icon>
+    </button>
+
+  </ion-row>
+    
+</div>
+
